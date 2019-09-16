@@ -11,13 +11,16 @@ import 'package:darkStart/parameters.dart';
 import 'package:darkStart/switchcase.dart';
 
 main(List<String> arguments) {
-  Employee emp = new Employee(1,"Roberto",true);
+  Employee emp = Employee.work(1, "Roberto", true);
+  emp.hours = 35;
+
+  print("El trabajador laboro ${emp.hours} días a la semana ");
 
   if (emp.metSchedule()) {
     emp.toWork();
   }
 
-  Employee emp2 = new Employee(2,"Pedro",false);
+  Employee emp2 = Employee(2, "Pedro");
 //  Employee emp2 = Employee()
 //    ..id = 2
 //    ..name = "pedro";
@@ -25,4 +28,11 @@ main(List<String> arguments) {
   if (emp2.metSchedule()) {
     emp2.toWork();
   }
+
+  DriverMan Juan = new DriverMan(1, "Julian");
+  Juan.salary = 100;
+  Juan.calculateSalary();
+
+  Cashier Tam = Cashier("Tam");
+  Tam.tellMeName();
 }
