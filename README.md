@@ -1,4 +1,3 @@
-A sample command-line application.
+# Aprendiendo Dart
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+Este repositorio contine algunos códigos básicos en este excelente lenguaje de programación
